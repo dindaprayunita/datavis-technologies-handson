@@ -4,7 +4,11 @@
 
 <div>
 	<button class="btn btn-primary" on:click={() => (clicked = true)}>
-		click here
+		{#if clicked == true}
+		You have clicked the button!
+		{:else}
+		You have to click the button!
+		{/if}
 	</button>
 	<!--  -->
 </div>
